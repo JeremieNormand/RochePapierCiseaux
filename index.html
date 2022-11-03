@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roche Papier Ciseaux</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+    <header>
+        <h1>Roche Papier Ciseaux</h1>
+    </header>
+
+    <main>
+        <section id="player">
+            <h2>Vous</h2>
+            <article>
+                <i id="playerChoiceIcon" class="fa-sharp fa-solid fa-hand-back-fist"></i>
+                <h3 id="playerChoiceName">Roche</h3>
+            </article>
+            <div class="choices">
+                <div class="rock" onclick="onClickRock()">
+                    <i class="fa-sharp fa-solid fa-hand-back-fist"></i>
+                    <p>Roche</p>
+                </div>
+                <div class="paper" onclick="onClickPaper()">
+                    <i class="fa-sharp fa-solid fa-hand"></i>
+                    <p>Papier</p>
+                </div>
+                <div class="scissors" onclick="onClickScissors()">
+                    <i class="fa-sharp fa-solid fa-hand-scissors"></i>
+                    <p>Ciseaux</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="interface">
+            <div>
+                <span id="playerScore">0</span>
+                <h2>SCORES</h2>
+                <span id="opponentScore">0</span>
+            </div>
+            <i id="result" class="fa-sharp fa-solid fa-equals"></i>
+            <a id="play" onclick="onClickPlay()">Jouer</a>
+        </section>
+
+        <section id="opponent">
+            <h2>Opposant</h2>
+            <article>
+                <i id="opponentChoiceIcon" class="fa-sharp fa-solid fa-hand-back-fist"></i>
+                <h3 id="opponentChoiceName">Roche</h3>
+            </article>
+            <div class="choices">
+                <div class="rock">
+                    <i class="fa-sharp fa-solid fa-hand-back-fist"></i>
+                    <p>Roche</p>
+                </div>
+                <div class="paper">
+                    <i class="fa-sharp fa-solid fa-hand"></i>
+                    <p>Papier</p>
+                </div>
+                <div class="scissors">
+                    <i class="fa-sharp fa-solid fa-hand-scissors"></i>
+                    <p>Ciseaux</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Jérémie Normand - 2022</p>
+    </footer>
+</body>
+
+<script src="game.js"></script>
+
+</html>

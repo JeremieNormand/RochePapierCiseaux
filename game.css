@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    background: #ac0b0b;
+    color: #ffffff;
+    text-shadow: .125rem .125rem .125rem #000000;
+}
+
+footer {
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    background: #333333;
+    color: #ffffff;
+    text-shadow: .125rem .125rem .125rem #000000;
+}
+
+main {
+    flex: auto;
+    display: flex;
+    background: #777777;
+}
+
+#interface {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#interface > div {
+    display: flex;
+    align-items: center;
+}
+
+#interface > div > span {
+    flex: 1;
+    font-size: 3rem;
+    color: #b5d01c;
+    text-shadow: .125rem .125rem .125rem #000000;
+}
+
+#interface > div > h2 {
+    flex: 4;
+    padding: .5rem;
+    color: #ffffff;
+    text-shadow: .125rem .125rem .125rem #000000;
+}
+
+#interface > i {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 8rem;
+    color: #ffffff;
+    text-shadow: .125rem .125rem .125rem #000000;
+}
+
+#interface > a {
+    margin: .5rem;
+    padding: .5rem;
+    font-size: 2rem;
+    border-radius: .5rem;
+    background: #333333;
+    color: #ffffff;
+    text-shadow: .125rem .125rem .125rem #000000;
+    box-shadow: .125rem .125rem .125rem #000000;
+}
+
+#interface > a:hover {
+    background: #ffffff;
+    color: #333333;
+    text-shadow: none;
+}
+
+#player, #opponent {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#player > h2, #opponent > h2 {
+    padding: .5rem;
+    font-size: 2rem;
+    color: #ffffff;
+    text-shadow: .125rem .125rem .125rem #000000;
+}
+
+#player > article, #opponent > article {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#player > article > i, #opponent > article > i {
+    padding: .5rem;
+    font-size: 8rem;
+    color: #ffffff;
+    text-shadow: .125rem .125rem .125rem #000000;
+}
+
+#player > article > h3, #opponent > article > h3 {
+    padding: .5rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-shadow: .125rem .125rem .125rem #000000;
+}
+
+#player > div, #opponent > div {
+    display: flex;
+}
+
+#player > div > div, #opponent > div > div {
+    flex: auto;
+    margin: .5rem;
+    padding: .5rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-shadow: .125rem .125rem .125rem #000000;
+}
+
+#player > div > div:hover {
+    border-radius: .5rem;
+    background: #333333;
+    box-shadow: .125rem .125rem .125rem #000000;
+}
